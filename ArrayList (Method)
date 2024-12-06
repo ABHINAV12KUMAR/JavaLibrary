@@ -1,0 +1,37 @@
+package com.jspider.arraylist;
+import java.util.ArrayList;
+public class Mainclass {
+public static void main(String[] args) {
+	System.out.println("Main method statred");
+	
+	ArrayList li=new ArrayList();// this object internally will have defalut capcity 10.the array list object empty
+	
+	boolean res1=li.isEmpty();
+	System.out.println(res1);
+	
+	int n= li .size();
+	System.out.println(n);
+	
+	System.out.println("-------------------------------");
+	
+	li.add(100);
+	li.add(2.5);
+	li.add("Abhinav");
+	li.add("Abhishek");
+	li.add(true);
+	li.add('t');
+	li.add("Aniket");
+	li.add(150);
+	li.add(false);
+	li.add(22.5);
+	li.add("hello");
+	
+	n= li .size();
+	System.out.println(n);
+	
+    res1=li.isEmpty();
+	System.out.println(res1);
+	
+	System.out.println("Main method ended");
+}
+}
