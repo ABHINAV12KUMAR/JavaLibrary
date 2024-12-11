@@ -1,0 +1,45 @@
+package com.jspider.pariorityqueue;
+import java.util.PriorityQueue;
+public class Mainclass {
+
+	public static void main(String[] args) {
+		System.out.println("Main method ");
+		System.out.println("-".repeat(30));
+		
+		PriorityQueue pq=new PriorityQueue();
+		System.out.println("Is pariorityQueue is empty-"+" "+pq.isEmpty());
+        System.out.println("Total element -"+pq.size());
+        //System.out.println(pq); this line represented in empty 
+        pq.add(20);
+        pq.add(10);
+        pq.add(30);
+        pq.add(40);
+        pq.add(9);
+        pq.add(25);
+        pq.add(36);
+        System.out.println("Total size-"+pq.size());
+        System.out.println("Is Pariority Queue-"+pq.isEmpty());
+        
+        
+        Object ol= pq.peek();// pariority of least of element 
+        System.out.println(ol);
+        System.out.println("Total element:-"+pq.size());
+        System.out.println(pq);
+        
+        
+     
+        Object o2=pq.poll();// remove the lest element
+        System.out.println(o2);
+        System.out.println("Total element-"+pq.size());
+        System.out.println(pq);
+        
+        
+        while(!pq.isEmpty()) {
+        	System.out.println("Removing element from queue");
+        	Object obj=pq.poll();
+        	System.out.println(obj);
+        }
+
+	}
+
+}
